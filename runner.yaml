@@ -1,0 +1,12 @@
+runner:
+  name: DNS Lookup
+  description: Query the Domain Name System (DNS) to obtain DNS records.
+  version: 0.0.1
+
+webform:
+  - name: domain_name
+    prompt: domain_name
+    type: text
+
+launch:
+  command: app.py --domain_name ${domain_name}
