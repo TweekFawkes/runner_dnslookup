@@ -7,11 +7,11 @@ current_dir = os.getenv('PWD', os.getcwd())
 requirements_path = os.path.join(current_dir, 'requirements.txt')
 
 # Install required packages from requirements.txt
-try:
-    subprocess.check_call([sys.executable, '-m', 'pip', 'install', '-r', requirements_path])
-except subprocess.CalledProcessError as e:
-    print(f"Error installing requirements: {e}")
-    sys.exit(1)
+# try:
+#     subprocess.check_call([sys.executable, '-m', 'pip', 'install', '-r', requirements_path])
+# except subprocess.CalledProcessError as e:
+#     print(f"Error installing requirements: {e}")
+#     sys.exit(1)
 
 import argparse
 from urllib.parse import urlparse
