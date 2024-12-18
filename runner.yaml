@@ -6,7 +6,7 @@ runner:
 build:
   commands: |
     echo "START: Building the runner"
-    python -m pip install -r requirements.txt
+    python3 -m pip install -U -r app/runner/requirements.txt
     echo "END: Building the runner"
 
 webform:
