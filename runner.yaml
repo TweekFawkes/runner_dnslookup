@@ -3,6 +3,12 @@ runner:
   description: Query the Domain Name System (DNS) to obtain DNS records.
   version: 0.0.1
 
+build:
+  commands: |
+    echo "START: Building the runner"
+    python -m pip install -r requirements.txt
+    echo "END: Building the runner"
+
 webform:
   - name: domain_name
     prompt: domain_name
